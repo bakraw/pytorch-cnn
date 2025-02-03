@@ -7,7 +7,7 @@ Réalisé dans le cadre d'un projet universitaire.
 
 ## Usage
 
-Vérifier que les *torch* et *torchvision* sont installés, puis :
+Vérifier que *torch* et *torchvision* sont installés, puis :
 ```bash
 git clone https://github.com/bakraw/pytorch-cnn
 cd pytorch-cnn
@@ -15,6 +15,8 @@ python3 main.py
 ```
 
 Alternativement, copier-coller le script dans un notebook Jupyter (Colab, Kaggle, etc.).
+
+Le script utilise automatiquement CUDA si disponible, mais il est aussi possible de le faire tourner sur CPU (non recommandé, passez par Colab si vous n'avez pas de [GPU Nvidia](https://youtu.be/XDpDesU_0zo?si=aCmgeyb0Auf7egqH) à disposition).
 
 ## Résultats
 
