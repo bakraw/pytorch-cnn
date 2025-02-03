@@ -1,4 +1,4 @@
-# Réseau neuronal convolutif avec PyTorch
+# CNN avec PyTorch
 
 Implémentation basique d'un réseau neuronal convolutif avec PyTorch et entraîné sur [CIFAR10](https://www.cs.toronto.edu/~kriz/cifar.html).
 3 couches convolutives, 2 couches linéaires, 1 couche de pooling.
