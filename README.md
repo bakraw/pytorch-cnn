@@ -11,7 +11,7 @@ Vérifier que *torch* et *torchvision* sont installés, puis :
 ```bash
 git clone https://github.com/bakraw/pytorch-cnn
 cd pytorch-cnn
-python3 main.py
+python3 cnn.py
 ```
 
 Alternativement, copier-coller le script dans un notebook Jupyter (Colab, Kaggle, etc.).
