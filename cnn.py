@@ -121,6 +121,12 @@ for epoch in range(EPOCHS):
 
 print("\033[92m✓ Entraînement terminé.\033[0m")
 
+# Sauvegarde du modèle
+print("\033[93m🛈 Sauvegarde du modèle...\033[0m")
+torch.save(model.state_dict(), 'model.pth')
+print("\033[92m✓ Modèle sauvegardé.\033[0m")
+
+
 
 ################################### TEST ##############################
 
