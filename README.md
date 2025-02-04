@@ -20,7 +20,7 @@ Le script utilise automatiquement CUDA si disponible, mais il est aussi possible
 
 ## Résultats
 
-On a 85~90% de précision en moyenne avec une quinzaine d'itérations. Il s'agit d'un réseau neuronal convolutif très basique, avec peu de couches, qui serait objectivement plus adapté à des datasets plus simples (Fashion-MNIST, Kuzushiji-MNIST, etc.) et qui rame donc un peu sur CIFAR10. On obtiendrait de bien meilleurs résultats avec des modèles plus avancés, tels que ResNet.
+On a 87~92% de précision en moyenne avec une quinzaine d'itérations. Il s'agit d'un réseau neuronal convolutif très basique, avec peu de couches, qui serait objectivement plus adapté à des datasets plus simples (Fashion-MNIST, Kuzushiji-MNIST, etc.) et qui rame donc un peu sur CIFAR10. On obtiendrait de bien meilleurs résultats avec des modèles plus avancés, tels que ResNet.
 
 Malgré tout, le modèle se trompe généralement sur les images les plus piégeuses (avions, camions, etc.), et reste assez performant sur les images plus standards.
 

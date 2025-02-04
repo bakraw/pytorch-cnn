@@ -8,7 +8,7 @@ import torchvision
 ############################## HYPERPARAMÈTRES ##############################
 
 
-EPOCHS = 15 # Nombre d'itérations pour l'entraînement.
+EPOCHS = 20 # Nombre d'itérations pour l'entraînement.
             # Plus grand -> plus précis.
             # Plus petit -> plus rapide, moins de risque d'overfitting.
 
