@@ -5,6 +5,22 @@ import torch
 import torchvision
 
 
+############################## HYPERPARAMÈTRES ##############################
+
+
+EPOCHS = 15 # Nombre d'itérations pour l'entraînement.
+            # Plus grand -> plus précis.
+            # Plus petit -> plus rapide, moins de risque d'overfitting.
+
+LEARNING_RATE = 0.001 # Vitesse d'apprentissage ("taille des pas").
+                      # Plus grand -> plus rapide, sort des minima locaux plus facilement.
+                      # Plus petit -> plus précis.
+
+BATCH_SIZE = 32 # Nombres d'images traitées à chaque itération.
+                # Plus grand -> plus rapide, calcul de gradient plus "stable".
+                # Plus petit -> moins de risque de blocage dans un minimum local, moins de mémoire utilisée.
+
+
 ############################## MODÈLE ##############################
 
 
@@ -47,19 +63,6 @@ class Cnn(torch.nn.Module):
 # On utilise CUDA si disponible, le CPU sinon.
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print("\033[92m✓ CUDA actif.\033[0m" if device.type == 'cuda' else "\033[91m⚠ CUDA indisponible. Exécution sur le CPU.\033[0m")
-
-# Hyperparamètres
-EPOCHS = 10 # Nombre d'itérations pour l'entraînement.
-            # Plus grand -> plus précis.
-            # Plus petit -> plus rapide, moins de risque d'overfitting.
-
-LEARNING_RATE = 0.001 # Vitesse d'apprentissage ("taille des pas").
-                      # Plus grand -> plus rapide, sort des minima locaux plus facilement.
-                      # Plus petit -> plus précis.
-
-BATCH_SIZE = 32 # Nombres d'images traitées à chaque itération.
-                # Plus grand -> plus rapide, calcul de gradient plus "stable".
-                # Plus petit -> moins de risque de blocage dans un minimum local, moins de mémoire utilisée.
 
 # Transformations à appliquer aux images.
 # On a (x - mean) / std tel que pour x = 0, on a (0 - 0,5) / 0,5 = -1 et pour x = 1 (initialement 255), on a (1 - 0,5) / 0,5 = 1.
