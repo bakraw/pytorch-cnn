@@ -8,7 +8,7 @@ import torchvision
 ############################## HYPERPARAMÈTRES ##############################
 
 
-EPOCHS = 20 # Nombre d'itérations pour l'entraînement.
+EPOCHS = 25 # Nombre d'itérations pour l'entraînement.
             # Plus grand -> plus précis.
             # Plus petit -> plus rapide, moins de risque d'overfitting.
 
@@ -130,8 +130,8 @@ torch.save(model.state_dict(), 'model.pth')
 print("\033[92m✓ Modèle sauvegardé.\033[0m")
 
 
-
 ################################### TEST ##############################
+
 
 print("\033[93m🛈 Début du test...\033[0m")
 model.eval() # On met le modèle en mode évaluation.
